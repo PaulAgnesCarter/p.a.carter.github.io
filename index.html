@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<html>
+<html lang="en">
 <head>
-	<title>Nice to meet you.</title>
-	<link rel="stylesheet" href="style.css" />
+	<title>June Saturn</title>
+	<link rel="stylesheet" href="css/core.css" />
+	<link rel="stylesheet" href="css/home.css" />
+	<link rel="stylesheet" href="css/mediaquery.css" />
+	<link rel="icon" href="images/ico.ico" />
+	<script src="js/lang.js"></script>
+	<script src="js/core.js"></script>
+	<script src="js/buttons.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="dropdown">
-		<span class="dropbtn">English</span>
-		<div class="dropdown-content">
-		  <a href="#">Français</a>
-		  <a href="#">한국어</a>
-		  <a href="#">正體中文</a>
-		</div>
-	</div>
-
-	<img src="images/Paul Agnes Carter.png" id=MainLogo>
-	<h1 id=NiceToMeetYou>Nice to meet you.</h2>
+	<header>
+		<img src="images/June Saturn.svg" id="logo">
+		<h1 class="nicetomeetyou" id="text-nicetomeetyou">Nice to meet you.</h1>
+		<form>
+			<select>
+				<option value="en">English</option>
+				<option value="fr">Français</option>
+				<option value="kr">한국어</option>
+				<option value="zh-tw">正體中文</option>
+			</select>
+		</form>
+	</header>
+	<main>
+		<table align="center">
+			<tr>
+				<td><div class="menu" onclick="window.location.href = 'games.html'"
+				onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"
+				onmousedown="goTo('games.html')">
+					Games</div></td>
+				<td><div class="menu" href="https://www.mozilla.org/en-US/"
+				onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"
+				onmousedown="goTo('arts.html')">
+					Arts</div></td>
+			</tr>
+			<tr>
+				<td><div class="menu" href="https://www.mozilla.org/en-US/"
+				onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"
+				onmousedown="goTo('aboutme.html')">
+					About me</div></td>
+				<td><div class="menu" href="https://www.mozilla.org/en-US/"
+				onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"
+				onmousedown="goTo('others.html')">
+					Other projects</div></td>
+			</tr>
+		</table>
+		<br><br><br>
+		<p class="fa-center">
+			<span class="button">Play minigames</span>&nbsp;
+			<span class="button">Shared materials</span>&nbsp;
+			<span class="button">Translation inquiries</span>
+		</p>
+		<br><br><br>
+	</main>
+	<footer>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		A website hosted by GitHub.
+	</footer>
 </body>
 </html>

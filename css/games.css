@@ -1,0 +1,24 @@
+#logo {
+    caret-color: transparent; /* removes blinking cursor */
+
+    width: 150px;
+
+    position: relative;
+    left: 15px;
+    top: 15px;
+
+    display: block;
+}
+
+header {
+
+    display: fixed;
+    background-color: green;
+    margin : 0px;
+    font-size: 0px;
+
+}
+
+.menu {
+    font-size: 18px;
+}
