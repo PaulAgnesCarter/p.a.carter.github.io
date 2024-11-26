@@ -29,7 +29,6 @@ const langResource = {
     },
 }
 
-/* 초기 언어는 영어(en)로 설정하고, 변경되면 맞춰서 업데이트 하는 리스너 구현 */
 window.addEventListener("load", function() {
 document.getElementById("languageSelector").value = "en";
 updateLanguage("en");
@@ -40,7 +39,6 @@ document.getElementById("languageSelector").addEventListener("change", function(
 });
 });
 
-/* 딕셔너리 내 모든 key 값을 순회하며 변경하는 함수 */
 function updateLanguage(lang) {
     for (let key in langResource[lang]) {
     const element = document.getElementById(key);
@@ -49,8 +47,6 @@ function updateLanguage(lang) {
     }
     }
 }
-
-
 
 
 window.onload=()=>{

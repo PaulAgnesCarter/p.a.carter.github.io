@@ -1,24 +1,42 @@
-#logo {
-    caret-color: transparent; /* removes blinking cursor */
+#games-poster-layout {
 
-    width: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 2.5em;
+
+}
+
+.games-poster img {
+    object-fit: fill;
+
+    border-radius: 20px;
+
+    display: inline-block;
+    width: 360px;
+    height: 500px;
+}
+
+.games-poster-texts {
 
     position: relative;
-    left: 15px;
-    top: 15px;
-
-    display: block;
-}
-
-header {
-
-    display: fixed;
-    background-color: green;
-    margin : 0px;
-    font-size: 0px;
+    bottom: 20px;
 
 }
 
-.menu {
+.games-poster-year {
+
     font-size: 18px;
+    color: #A1A1A1;
+    position: relative;
 }
+
+.games-poster-name {
+
+    position: relative;
+    top: 1.2em;
+}
+
